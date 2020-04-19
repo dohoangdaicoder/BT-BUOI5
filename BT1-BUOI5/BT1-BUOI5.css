@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+i {
+    font-size: 100px;
+    color: red;
+}
+.main {
+    text-align: center;
+}
+.main a{
+    text-decoration: none;
+    font-size: 25px;
+}
+.main a:hover{
+    display: block;
+    margin-top: 5px;
+    color: red;
+}

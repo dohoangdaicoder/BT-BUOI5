@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.main {
+    width: 1096px;
+    height: 412px;
+    margin-left: 14%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.product {
+    width: 264px;
+    height: 412px;
+    float: left;
+    margin: 0px 5px;
+    padding: 10px 0px;
+}
+.title a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+.title a:hover {
+    color: blue;
+}
+.main-img {
+    width: 264px;
+    height: 336px;
+    position: relative;
+}
+.layer-img-1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.layer-img-2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    opacity: 0;
+}
+.icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    width: 40px;
+    background-color: #d2d2d2;
+    opacity: 0;
+}
+.icon i {
+    font-size: 25px;
+    padding: 7px;
+    cursor: pointer;
+}
+.icon i:hover {
+    color: white;
+    background-color: orange;
+}
+.product:hover .icon {
+    opacity: 1;
+    transition: 0.6s;
+}
+.product:hover .layer-img-2 {
+    opacity: 1;
+    transition: 0.6s;
+}
+.title {
+    font-size: 14px;
+    border-bottom: 1px solid gray;
+    margin-top: 10px;
+    display: inline-block;
+}
+.bottom {
+    margin-top: 10px;
+}
+.bottom .left {
+    position: relative;
+    width: 180px;
+    height: 40px;
+    float: left;
+}
+.bottom .right {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    float: right;
+}
+.left .layer-left-1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    font-size: 16px;
+}
+.left .layer-left-2 {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    z-index: 1;
+    font-size: 16px;
+    opacity: 0;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.product:hover .layer-left-1 {
+    top: -20px;
+    opacity: 0;
+    transition: 0.6s;
+}
+.product:hover .layer-left-2 {
+    top: 0px;
+    opacity: 1;
+    transition: 0.6s;
+}
+.bottom .right {
+    width: 70px;
+    height: 40px;
+    float: right;
+}
+.right .red {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    opacity: 0;
+    transition: 0.6s;
+}
+.product:hover .red {
+    top: 0px;
+    opacity: 1;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.right .blue {
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    opacity: 0;
+    transition: 0.6s;
+}
+.product:hover .blue {
+    top: 0px;
+    opacity: 1;
+    transition: 0.6s;
+    cursor: pointer;
+}

@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.main {
+    width: 100%;
+    height: 100%;
+}
+.line1 {
+    width: 978px;
+    height: 431px;
+    position: relative;
+    left: 18%;
+}
+.product {
+    width: 306px;
+    height: 431px;
+    margin: 15px 10px;
+    position: relative;
+    float: left;
+}
+.img-product img {
+    width: 306px;
+    height: 368px;
+}
+.title {
+    width: 306px;
+    height: 63px;
+    text-align: center;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.name-product {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+p {
+    display: inline;
+    padding-right: 5px;
+}
+p.gia-cu {
+    text-decoration: line-through;
+    text-align: center;
+}
+.icon {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    z-index: 2;
+    width: 161px;
+    height: 50px;
+    margin: 0px 5px;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.6s;
+    transform: scale(0);
+    color: white;
+}
+.icon i {
+    font-size: 30px;
+    padding: 8px;
+    cursor: pointer;
+}
+.icon i:hover {
+    width: 35px;
+    height: 40px;
+    color: white;
+    background-color: orange;
+}
+.product:hover .icon {
+    opacity: 1;
+    transition: 0.6s;
+    transform: scale(1.5);
+}
+.icon1 {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 5px;
+    background-color: #80808096;
+}
+.icon2 {
+    width: 50px;
+    height: 50px;
+    float: left;
+    background-color: #80808096;
+}
+.icon3 {
+    width: 50px;
+    height: 50px;
+    float: right;
+    background-color: #80808096;
+}
